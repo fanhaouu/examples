@@ -19,5 +19,6 @@ spec:
       # by default the path is /, but you can override and mount a specific path of the filesystem by using the path attribute
       # path: /some/path/in/side/cephfs
       user: admin
-      secretFile: "/etc/ceph/admin.secret"
+      secretRef: 
+        name: ceph-secret
       readOnly: true
